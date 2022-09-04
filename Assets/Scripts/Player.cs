@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         transform.position += direction * Time.deltaTime;
     }
 
-    private void AnimateSprite()
+    public void AnimateSprite()
     {
         spriteIndex++;
 
