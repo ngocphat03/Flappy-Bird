@@ -31,13 +31,14 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
             direction = Vector3.up * strength;
+            SoundController.instance.PlayThisSound("wing");
         }
 
         direction.y += gravity * Time.deltaTime;
         transform.position += direction * Time.deltaTime;
     }
 
-    public void AnimateSprite()
+    private void AnimateSprite()
     {
         spriteIndex++;
 
@@ -50,8 +51,10 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Obstacle")) {
+            SoundController.instance.PlayThisSound("hit");
             FindObjectOfType<GameManager>().GameOver();
         } else if (other.gameObject.CompareTag("Scoring")) {
+            SoundController.instance.PlayThisSound("point");
             FindObjectOfType<GameManager>().IncreaseScore();
         }
     }
