@@ -1,18 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class View : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SpriteRenderer spriteRenderer;
+    public Sprite[] sprites;
+    private int spriteIndex;
+    private void Awake()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
+    }
+    private void AnimateSprite()
+    {
+        spriteIndex++;
+
+        if (spriteIndex >= sprites.Length) {
+            spriteIndex = 0;
+        }
+        spriteRenderer.sprite = sprites[spriteIndex];
     }
 }

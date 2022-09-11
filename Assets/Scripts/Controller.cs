@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+public class Controller : MonoBehaviour
+{   
+    private void Awake()
     {
-        
+        // View.startRepeatAnimation();
+    }
+    private void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
+
+            FindObjectOfType<Model>().birdMove();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

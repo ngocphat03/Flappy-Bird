@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Model : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //Cho chim co the bay
+    private Rigidbody2D body;
+    public float strength = 5F;
+    private void Awake()
     {
-        
+        body = this.gameObject.GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void birdMove()
     {
-        
+        body.velocity = Vector2.up * strength;
     }
+    
 }
