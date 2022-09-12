@@ -14,6 +14,7 @@ public class View : MonoBehaviour
     {
         InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
     }
+    //Cho chim vo canh
     private void AnimateSprite()
     {
         spriteIndex++;
