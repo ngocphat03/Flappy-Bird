@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8203899829688839598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8203899829688839596}
+  - component: {fileID: 8203899829688839597}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8203899829688839596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203899829688839598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8203899829688839597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203899829688839598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48632709b99b564faa31ad704a9ff58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  scoreClone: {fileID: 0}
+  getReady: {fileID: 0}
+  playButton: {fileID: 0}
+  gameOver: {fileID: 0}
+  popupDie: {fileID: 0}
+  profileButton: {fileID: 0}
+  profilePopup: {fileID: 0}
+  settingButton: {fileID: 0}
+  settingPopup: {fileID: 4040130234816083047, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+  inputField: {fileID: 0}
+  nameNow: 
+  playerOneName: {fileID: 0}
+  playerOneScore: {fileID: 0}
+  playerOneDate: {fileID: 0}
+  playerTwoName: {fileID: 0}
+  playerTwoScore: {fileID: 0}
+  playerTwoDate: {fileID: 0}
+  playerThreeName: {fileID: 0}
+  playerThreeScore: {fileID: 0}
+  playerThreeDate: {fileID: 0}

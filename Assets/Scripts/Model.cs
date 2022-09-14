@@ -94,13 +94,17 @@ public class Model : MonoBehaviour
         settingButton.SetActive(true);
     }
 //Show and hide button (UI-Screen & UI-Screen Popup) when we click
+    // public GameObject settingPrelab;
     public void Setting()
     {
-        settingPopup.SetActive(true);
+        // settingPopup.SetActive(true);
+        Instantiate(Resources.Load<GameObject>("Popup/PopupSetting"));
+
     }
     public void CloseSetting()
     {
-        settingPopup.SetActive(false);
+        // settingPopup.SetActive(false);
+        Destroy(settingPopup);
     }
     public void Profile()
     {

@@ -14,6 +14,7 @@ public class Controller : MonoBehaviour
     public void SettingButton()
     {
         FindObjectOfType<Model>().Setting();
+        // Resources.Load<GameObject>("SettingPopup");
     }
 //Click close setting button
     public void CloseSettingButton()
