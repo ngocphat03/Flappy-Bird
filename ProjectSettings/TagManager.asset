@@ -6,6 +6,17 @@ TagManager:
   tags:
   - Obstacle
   - Scoring
+  - Setting
+  - Profile
+  - PlayerOneName
+  - PlayerOneScore
+  - PlayerOneDay
+  - PlayerTwoName
+  - PlayerTwoScore
+  - PlayerTwoDay
+  - PlayerThreeName
+  - PlayerThreeScore
+  - PlayerThreeDay
   layers:
   - Default
   - TransparentFX

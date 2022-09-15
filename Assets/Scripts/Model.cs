@@ -29,7 +29,7 @@ public class Model : MonoBehaviour
         for (int i = 0; i < pipes.Length; i++) {
             Destroy(pipes[i].gameObject);
         }
-        ResetScreen();
+        ResetScreen(); 
         PrintScore();
     }
 //Chu quan tinh tien!!!
@@ -97,25 +97,29 @@ public class Model : MonoBehaviour
     // public GameObject settingPrelab;
     public void Setting()
     {
-        // settingPopup.SetActive(true);
-        Instantiate(Resources.Load<GameObject>("Popup/PopupSetting"));
+        settingPopup.SetActive(true);
+        // Instantiate(Resources.Load<GameObject>("Popup/PopupSetting"));
 
     }
     public void CloseSetting()
     {
-        // settingPopup.SetActive(false);
-        Destroy(settingPopup);
+        settingPopup.SetActive(false);
+        // Destroy(GameObject.FindWithTag("Setting"));
     }
     public void Profile()
     {
         profilePopup.SetActive(true);
+        // Instantiate(Resources.Load<GameObject>("Popup/PopupProfile"));
+        // FindObjectOfType<AddChild>().AddChildPrefer();
     }
     public void CloseProfile()
     {
         profilePopup.SetActive(false);
+        // Destroy(GameObject.FindWithTag("Profile"));
+
     }
 //Luu diem vao bo nho//
-
+    public GameObject canvas;
     public GameObject inputField;
     public string nameNow;
     public Text playerOneName, playerOneScore, playerOneDate;
@@ -125,6 +129,7 @@ public class Model : MonoBehaviour
     private string FakePlayerOnePoint, FakePlayerOneName, FakePlayerOneDate; 
     private string FakePlayerTwoPoint, FakePlayerTwoName, FakePlayerTwoDate; 
     private string FakePlayerThreePoint, FakePlayerThreeName, FakePlayerThreeDate; 
+    // public GameObject Test;
     public void achievements()
     {   
         PlayerPrefs.SetInt("NowScoce", score);
@@ -133,7 +138,8 @@ public class Model : MonoBehaviour
         {
             PrepareAchievements();
             SortAchievements();
-            ShowAchievements();
+            // ShowAchievements();
+            BackUp();
         } 
         popupDie.SetActive(false);
     }
@@ -161,7 +167,9 @@ public class Model : MonoBehaviour
         }
     //In ra man hinh bang diem
         public void ShowAchievements()
-        {
+        {   //playerOneName = GameObject.FindWithTag("PlayerOneName").GetComponent<;
+
+            // Test = GameObject.FindWithTag("PlayerOneName");
             playerOneName.text = PlayerPrefs.GetString("HighNameOne");
             playerOneScore.text = PlayerPrefs.GetString("HighPointOne");
             playerOneDate.text = PlayerPrefs.GetString("HighDateOne");
@@ -173,6 +181,19 @@ public class Model : MonoBehaviour
             playerThreeName.text = PlayerPrefs.GetString("HighNameThree");
             playerThreeScore.text = PlayerPrefs.GetString("HighPointThree");
             playerThreeDate.text = PlayerPrefs.GetString("HighDateThree");
+  
+ 
+            // GameObject.FindWithTag("PlayerOneTwo") = PlayerPrefs.GetString("HighNameOne");
+            // GameObject.FindWithTag("PlayerOneScore") = PlayerPrefs.GetString("HighPointOne");
+            // GameObject.FindWithTag("PlayerOneDay") = PlayerPrefs.GetString("HighDateOne");
+
+            // GameObject.FindWithTag("PlayerTwoName") = PlayerPrefs.GetString("HighNameTwo");
+            // GameObject.FindWithTag("PlayerTwoScore") = PlayerPrefs.GetString("HighPointTwo");
+            // GameObject.FindWithTag("PlayerTwoDay") = PlayerPrefs.GetString("HighDateTwo");
+
+            // GameObject.FindWithTag("PlayerThreeName") = PlayerPrefs.GetString("HighNameThree");
+            // GameObject.FindWithTag("PlayerThreeScore") = PlayerPrefs.GetString("HighPointThree");
+            // GameObject.FindWithTag("PlayerThreeDay") = PlayerPrefs.GetString("HighDateThree");
         }
     //Backup du lieu tu lan choi gan nhat
         public void BackUp()

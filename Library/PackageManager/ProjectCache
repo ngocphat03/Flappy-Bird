@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637986678700000000
+      ticks: 637988656190000000
     m_Hash: 1034716650
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -114,6 +114,7 @@ m_ResolvedPackages:
     - 5.2.0
     - 5.2.1
     - 5.2.3
+    - 5.2.4
     - 6.0.0-pre.1
     - 6.0.0-pre.2
     - 6.0.1
@@ -334,6 +335,7 @@ m_ResolvedPackages:
     - 4.1.3
     - 4.2.0
     - 4.3.0
+    - 4.3.1
     - 5.0.0-pre.1
     - 5.0.0-pre.2
     - 5.0.1
@@ -3495,6 +3497,7 @@ m_ResolvedPackages:
     - 4.0.4
     - 4.1.0
     - 4.2.0
+    - 4.2.1
     - 5.0.0-pre.1
     - 5.0.0-pre.2
     - 5.0.0
