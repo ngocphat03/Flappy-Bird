@@ -3,8 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour
 {
+//Chuyen qua phan choi chinh
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene("Start");
+    }
 //Click play button
     public void PlayButton()
     {
@@ -14,7 +20,6 @@ public class Controller : MonoBehaviour
     public void SettingButton()
     {
         FindObjectOfType<Model>().Setting();
-        // Resources.Load<GameObject>("SettingPopup");
     }
 //Click close setting button
     public void CloseSettingButton()
