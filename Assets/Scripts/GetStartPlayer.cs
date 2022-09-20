@@ -7,17 +7,17 @@ public class GetStartPlayer : View
 //Lay hieu ung
     private void Awake()
     {
-        GetSpriteRender();
+//        GetSpriteRender();
     }
 //Lap lai hieu ung
     private void Start()
     {
-        RepeatingAnimate();  
+//        RepeatingAnimate();  
     }
 //Lap lai hoat canh cho chim bay len va ha xuong
     private void Update()
     {
-        MoveBirdTopAndBottom();
+//        MoveBirdTopAndBottom();
     }
 }
 

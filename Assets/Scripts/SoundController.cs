@@ -7,6 +7,7 @@ public class SoundController : MonoBehaviour
 {
     [SerializeField] Slider volumeMultiplier;
     public static SoundController instance;
+    // public float volumeMultiplier;
     private void Awake()
     {
         instance = this;
@@ -23,24 +24,21 @@ public class SoundController : MonoBehaviour
             Load();
         }
     }
-//Tang giam am luong tu thanh "Slide"
     public void ChangeVolume()
     {
         AudioListener.volume = volumeMultiplier.value;
         Save();
     }
-//Ham choi nhac duoc goi
     public void PlayThisSound(string clipName)
     {
         AudioSource audioSource = this.gameObject.AddComponent<AudioSource>();
+        // audioSource.volume *= volumeMultiplier;
         audioSource.PlayOneShot((AudioClip)Resources.Load("Sounds/" + clipName, typeof(AudioClip)));
     }
-//Tai cuong do am luong
     private void Load()
     {
         volumeMultiplier.value = PlayerPrefs.GetFloat("musicVolume");
     }
-//Luu cuong do am luong
     private void Save()
     {
         PlayerPrefs.SetFloat("musicVolume", volumeMultiplier.value);
