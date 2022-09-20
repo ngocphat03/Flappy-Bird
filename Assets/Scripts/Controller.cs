@@ -4,6 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+
+public interface IBirdModel
+{
+
+}
+
+public class Controller : IBirdController
+{
+
+}
+
+/*
 public class Controller : MonoBehaviour
 {
 //Chuyen qua phan choi chinh
@@ -55,3 +68,4 @@ public class Controller : MonoBehaviour
         Application.OpenURL("https://www.tiktok.com/@nnp1109");
     }    
 }
+*/

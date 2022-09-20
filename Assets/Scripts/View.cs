@@ -1,4 +1,30 @@
 using UnityEngine;
+
+//Interface for the view
+public interface IBirdView
+{
+
+}
+
+public class View : MonoBehaviour, IBirdView
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 public class View : MonoBehaviour
 {
 //Lam cho chim vo canh
@@ -39,3 +65,4 @@ public class View : MonoBehaviour
         }
     }
 }
+*/

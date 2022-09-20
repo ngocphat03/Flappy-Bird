@@ -32,13 +32,18 @@ public class BirdViewFactory : IBirdViewFactory
 //Interface for the controller factorty
 public interface IBirdControllerFactory
 {
-    IBirdControllerFactory Controller { get; }
+    IBirdController Controller { get; }
 }
 //Implementation of the controller factory
 public class BirdControllerFactory : IBirdControllerFactory
 {
     public IBirdController Controller { get; private set ;}
 
+    //Create just the controller
+    public BirdControllerFactory(IBirdModel model, IBirdView view)
+    {
+        Controller = new BirdController(model, view);
+    }
     //Khoi tao controller
     public BirdControllerFactory()
     {

@@ -4,6 +4,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Interface for the model
+public interface IBirdModel
+{
+
+}
+
+public class Model : IBirdModel
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 public class Model : MonoBehaviour
 {
 //Chim thuc tinh - san sang doi mat voi cai chet diii
@@ -164,3 +200,4 @@ public class Model : MonoBehaviour
             playerThreeDate.text = PlayerPrefs.GetString("HighDateThree");
         }
 }
+*/
