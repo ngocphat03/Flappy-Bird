@@ -77,6 +77,8 @@ public class Controller : MonoBehaviour, IController
             Destroy(pipes[i].gameObject);
         }
         PrintScore();
+		FindObjectOfType<Model>().Achievements();
+		FindObjectOfType<View>().ResetScreen();
     }
 //Ngu dong thoi gian
     float pauseTime = 0;

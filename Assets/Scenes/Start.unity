@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8723041547680011707, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8723041547680011707, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -701,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5088693320211260840, guid: a0e594b77f3749502b965f47b2557278, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5088693320211260840, guid: a0e594b77f3749502b965f47b2557278, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1962,6 +1962,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f972819ff614c44580dac5a5e8bdb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  profileButton: {fileID: 1412874649}
+  profilePopup: {fileID: 1562547962}
+  settingButton: {fileID: 1978276969}
+  settingPopup: {fileID: 398633694}
+  scoreText: {fileID: 779088198}
+  scoreClone: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  sprites:
+  - {fileID: 21300000, guid: 658a7facb42d764468b83fe5fd9d2d3f, type: 3}
+  - {fileID: 21300000, guid: 83763a688ae62474aa1918c0b34b7eb7, type: 3}
+  - {fileID: 21300000, guid: 0b43b9ed7b1740447b75bb7fc1a22fe8, type: 3}
+  spriteIndex: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!4 &851694007
 Transform:
   m_ObjectHideFlags: 0
@@ -2618,6 +2631,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1702542450451485353, guid: 72b60153da36c83f7bb51bcad87f4fa6, type: 3}
+      propertyPath: m_TagString
+      value: Setting
+      objectReference: {fileID: 0}
     - target: {fileID: 1702542450451485354, guid: 72b60153da36c83f7bb51bcad87f4fa6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2708,7 +2725,7 @@ PrefabInstance:
       objectReference: {fileID: 851694006}
     - target: {fileID: 1702542450451485355, guid: 72b60153da36c83f7bb51bcad87f4fa6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SettingButton
+      value: PopupOn
       objectReference: {fileID: 0}
     - target: {fileID: 1702542450451485355, guid: 72b60153da36c83f7bb51bcad87f4fa6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

@@ -959,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 839484615}
     - target: {fileID: 5088693321781513348, guid: a0e594b77f3749502b965f47b2557278, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseProfileButton
+      value: CloseProfile
       objectReference: {fileID: 0}
     - target: {fileID: 5088693321781513348, guid: a0e594b77f3749502b965f47b2557278, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1316,6 +1316,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f972819ff614c44580dac5a5e8bdb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  profileButton: {fileID: 657056249}
+  profilePopup: {fileID: 792578271}
+  settingButton: {fileID: 1448213164}
+  settingPopup: {fileID: 1334130057}
+  scoreText: {fileID: 0}
+  scoreClone: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  sprites: []
+  spriteIndex: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!4 &839484616
 Transform:
   m_ObjectHideFlags: 0
@@ -1608,7 +1618,7 @@ PrefabInstance:
       objectReference: {fileID: 839484615}
     - target: {fileID: 7044278477165910253, guid: 87f732de53be96725bbafad7bd2b8cf3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ProfileButton
+      value: Profile
       objectReference: {fileID: 0}
     - target: {fileID: 7044278477165910253, guid: 87f732de53be96725bbafad7bd2b8cf3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1641,6 +1651,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f166e09d3b11170a4be66460b5fb46dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  profileButton: {fileID: 0}
+  profilePopup: {fileID: 0}
+  settingButton: {fileID: 0}
+  settingPopup: {fileID: 0}
+  scoreText: {fileID: 0}
+  scoreClone: {fileID: 0}
   spriteRenderer: {fileID: 0}
   sprites:
   - {fileID: 21300000, guid: 658a7facb42d764468b83fe5fd9d2d3f, type: 3}
@@ -2057,7 +2073,7 @@ PrefabInstance:
     - target: {fileID: 5084157022055028983, guid: d65f0d9b7cb045638bb7c4816385ac09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1539578240}
+      objectReference: {fileID: 839484615}
     - target: {fileID: 5084157022055028983, guid: d65f0d9b7cb045638bb7c4816385ac09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeScene
@@ -2367,50 +2383,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536129423}
   m_CullTransparentMesh: 1
---- !u!1 &1539578239
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1539578241}
-  - component: {fileID: 1539578240}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1539578240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539578239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f972819ff614c44580dac5a5e8bdb21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1539578241
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539578239}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582434926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,7 +2612,7 @@ PrefabInstance:
       objectReference: {fileID: 839484615}
     - target: {fileID: 1702542450451485355, guid: 72b60153da36c83f7bb51bcad87f4fa6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SettingButton
+      value: Setting
       objectReference: {fileID: 0}
     - target: {fileID: 1702542450451485355, guid: 72b60153da36c83f7bb51bcad87f4fa6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2980,7 +2952,7 @@ PrefabInstance:
       objectReference: {fileID: 839484615}
     - target: {fileID: 4882086019419293634, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettingButton
+      value: CloseSetting
       objectReference: {fileID: 0}
     - target: {fileID: 4882086019419293634, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetStartPlayer : View
+public class GetStartPlayer : Controller
 {
 //Lay hieu ung
     private void Awake()
     {
-//        GetSpriteRender();
+        GetSpriteRender();
     }
 //Lap lai hieu ung
     private void Start()
     {
-//        RepeatingAnimate();  
+        RepeatingAnimate();  
     }
 //Lap lai hoat canh cho chim bay len va ha xuong
     private void Update()
     {
-//        MoveBirdTopAndBottom();
+        BirdAutomaticallyMove();
     }
 }
 

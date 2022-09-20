@@ -1,4 +1,22 @@
 using UnityEngine;
-public class View : MonoBehaviour
+interface IView
 {
+	public void ResetScreen();
+	public void ShowScreen();
+	public void ShowAchievements();
+}
+public class View : MonoBehaviour, IView
+{
+	public void ResetScreen()
+	{
+
+	}
+	public void ShowScreen()
+	{
+
+	}
+	public void ShowAchievements()
+	{
+		
+	}
 }
