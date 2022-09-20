@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public interface IBirdModel
+public interface IBirdController
 {
 
 }

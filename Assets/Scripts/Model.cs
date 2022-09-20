@@ -7,12 +7,13 @@ using UnityEngine.UI;
 //Interface for the model
 public interface IBirdModel
 {
-
 }
 
 public class Model : IBirdModel
 {
+    private void Test(){
 
+    }
 }
 
 

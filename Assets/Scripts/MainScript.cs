@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+// using UnityEngine;
 
-public class MainScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+// public class MainScript : MonoBehaviour
+// {
+//     void Awake()
+//     {
+//         //Create the model
+//         var modelFactory = new BirdModelFactory();
+//         var model = modelFactory.Model;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+//         //Create the view
+// 		var viewFactory = new BirdViewFactory();
+// 		var view = viewFactory.View;
+ 
+// 		// Create the controller
+// 		var controllerFactory = new BirdControllerFactory(model, view);
+// 		var controller = controllerFactory.Controller;
+//     }
+// }
