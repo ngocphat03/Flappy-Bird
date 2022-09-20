@@ -174,6 +174,22 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2074530844492126571, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 851694006}
+    - target: {fileID: 2074530844492126571, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Tiktok
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760550540714170654, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 851694006}
+    - target: {fileID: 2760550540714170654, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Facebook
+      objectReference: {fileID: 0}
     - target: {fileID: 3219848059300856546, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -297,6 +313,14 @@ PrefabInstance:
     - target: {fileID: 8723041547680011707, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8805214749973288775, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 851694006}
+    - target: {fileID: 8805214749973288775, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Instagram
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41979372fad2d83fb3001f9d8be3e0d, type: 3}
@@ -789,6 +813,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5592639397463967529, guid: a0e594b77f3749502b965f47b2557278, type: 3}
+    - {fileID: 5287699580618124762, guid: a0e594b77f3749502b965f47b2557278, type: 3}
+    - {fileID: 3865972748582693572, guid: a0e594b77f3749502b965f47b2557278, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a0e594b77f3749502b965f47b2557278, type: 3}
 --- !u!1 &301204235
 GameObject:

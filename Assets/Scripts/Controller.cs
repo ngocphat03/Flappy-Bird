@@ -36,6 +36,11 @@ public class Controller : MonoBehaviour
     {
         FindObjectOfType<Model>().CloseProfile();
     }
+//Click save button
+    public void SaveButton()
+    {
+        FindObjectOfType<Model>().Achievements();
+    }
 //Cho em xin in4 :333
     public void Facebook()
     {

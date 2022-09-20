@@ -971,6 +971,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5592639397463967529, guid: a0e594b77f3749502b965f47b2557278, type: 3}
+    - {fileID: 3865972748582693572, guid: a0e594b77f3749502b965f47b2557278, type: 3}
+    - {fileID: 5287699580618124762, guid: a0e594b77f3749502b965f47b2557278, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a0e594b77f3749502b965f47b2557278, type: 3}
 --- !u!1 &657056249 stripped
 GameObject:
@@ -1646,7 +1648,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0b43b9ed7b1740447b75bb7fc1a22fe8, type: 3}
   spriteIndex: 0
   direction: {x: 0, y: 0, z: 0}
-  animationSpeed: 1
 --- !u!114 &1099655092 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 60070226668348702, guid: a0e594b77f3749502b965f47b2557278, type: 3}

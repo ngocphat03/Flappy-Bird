@@ -110,30 +110,20 @@ public class Model : MonoBehaviour
     public string nameNow;
     public Text playerOneName, playerOneScore, playerOneDate, playerTwoName, playerTwoScore, playerTwoDate, playerThreeName, playerThreeScore, playerThreeDate; 
 //Kiem tra xem co phai diem cao nhat khon
+    
     public void Achievements()
     {   
         PlayerPrefs.SetInt("NowScoce", score);
-        if(PlayerPrefs.GetInt("HighScore") <= PlayerPrefs.GetInt("NowScoce"))
+        if(PlayerPrefs.GetInt("HighScore") < PlayerPrefs.GetInt("NowScoce"))
         //if(true)
         {
-            PrepareAchievements();
-            SortAchievements();
-            ShowAchievements();
-        } 
-        popupDie.SetActive(false);
-    }
-    //Chuan bi thu tuc cho bang diem
-        public void PrepareAchievements()
-        {
             nameNow = inputField.GetComponent<Text>().text;
-            PlayerPrefs.SetInt("HightScoce", score);
-        }
-    //Sap xep lai bang diem
-        public void SortAchievements()
-        {
             DateTime timeNow = DateTime.Now;
             string timeNowClone = timeNow.ToString();
             string point = score.ToString();
+            PlayerPrefs.SetInt("HightScoce", score);
+
+            //Sap xep lai bang diem
             PlayerPrefs.SetString("HighDateThree", PlayerPrefs.GetString("HighDateTwo"));
             PlayerPrefs.SetString("HighDateTwo", PlayerPrefs.GetString("HighDateOne"));
             PlayerPrefs.SetString("HighPointThree", PlayerPrefs.GetString("HighPointTwo"));
@@ -143,7 +133,21 @@ public class Model : MonoBehaviour
             PlayerPrefs.SetString ("HighPointOne", point);
             PlayerPrefs.SetString ("HighNameOne", nameNow);
             PlayerPrefs.SetString ("HighDateOne", timeNowClone);
-        }
+            // //In ra man hinh
+            playerOneName.text = PlayerPrefs.GetString("HighNameOne");
+            playerOneScore.text = PlayerPrefs.GetString("HighPointOne");
+            playerOneDate.text = PlayerPrefs.GetString("HighDateOne");
+
+            playerTwoName.text = PlayerPrefs.GetString("HighNameTwo");
+            playerTwoScore.text = PlayerPrefs.GetString("HighPointTwo");
+            playerTwoDate.text = PlayerPrefs.GetString("HighDateTwo");
+
+            playerThreeName.text = PlayerPrefs.GetString("HighNameThree");
+            playerThreeScore.text = PlayerPrefs.GetString("HighPointThree");
+            playerThreeDate.text = PlayerPrefs.GetString("HighDateThree");
+        } 
+        popupDie.SetActive(false);
+    }
     //In ra man hinh bang diem
         public void ShowAchievements()
         {
