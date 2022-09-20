@@ -1,0 +1,60 @@
+Controller
+	ChangeScene
+	PlayButton //Delete
+	SettingButton
+	CloseSettingButton
+	ProfileButton
+	CloseProfileButton
+	Facebook	|
+	Instagram	|===> Tao thanh mot ham duy nhat: Social Network
+	Tiktok		|
+Model
+	Play
+	IncreaseScore
+	PrintScore
+	Pause
+	GameOver
+	ResetScreen
+	ShowScreen
+	Achievement
+	PrepareAchievement
+	SortAchievement
+	ShowAchievement
+View
+	GetSpriteRender
+	RepeatingAnimate
+	AnimeSprite
+	MoveBirdTopAndBottom --> Rename: BirdAutomaticallyMove
+	
+NEW MVC
+
+Controller
+	ChangeScene
+	SettingButton
+	CloseSettingButton
+	ProfileButton
+	CloseProfileButton
+	SocialNetwork
+	Play
+	Pause
+	GameOver
+	IncreaseScore
+	PrintScore
+	GetSpriteRender
+	RepeatingAnimate
+	AnimeSprite
+	BirdAutomaticallyMove
+Model
+	Achievement
+	PrepareAchievements
+	SortAchievements
+	
+View
+	ResetScreen
+	ShowScreen
+	ShowAchievements
+	
+	
+	
+	
+	

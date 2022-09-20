@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Model : MonoBehaviour
+interface IModel
 {
+}
+public class Model : MonoBehaviour, IModel
+{
+
 }
