@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &62686173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5084157022055028977, guid: d65f0d9b7cb045638bb7c4816385ac09, type: 3}
+  m_PrefabInstance: {fileID: 1485877209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &97716744 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5088693321807832252, guid: a0e594b77f3749502b965f47b2557278, type: 3}
@@ -473,6 +478,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61e2b5e0dcf1051759b260da494210ca, type: 3}
+--- !u!1 &330476960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330476962}
+  - component: {fileID: 330476961}
+  m_Layer: 0
+  m_Name: View
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &330476961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330476960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d363899f4f1e8e02085ec77f210b9e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profileButton: {fileID: 0}
+  profilePopup: {fileID: 0}
+  settingButton: {fileID: 0}
+  settingPopup: {fileID: 0}
+  scoreText: {fileID: 1795641743}
+  scoreClone: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  sprites: []
+  spriteIndex: 0
+  direction: {x: 0, y: 0, z: 0}
+  getReady: {fileID: 135316942}
+  playButton: {fileID: 62686173}
+  gameOver: {fileID: 956549425}
+  popupDie: {fileID: 1262410416}
+  playerOneName: {fileID: 599665418}
+  playerOneScore: {fileID: 1099655092}
+  playerOneDate: {fileID: 1042318918}
+  playerTwoName: {fileID: 97716744}
+  playerTwoScore: {fileID: 944456586}
+  playerTwoDate: {fileID: 410225196}
+  playerThreeName: {fileID: 1836714990}
+  playerThreeScore: {fileID: 1494168304}
+  playerThreeDate: {fileID: 141295045}
+--- !u!4 &330476962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330476960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.741376, y: 1.5067493, z: -6.05691}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331291354
 GameObject:
   m_ObjectHideFlags: 0

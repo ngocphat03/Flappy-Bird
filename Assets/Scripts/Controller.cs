@@ -32,7 +32,7 @@ public class Controller : MonoBehaviour, IController
         SceneManager.LoadScene("Start");
     }
 //Show and hide button (UI-Screen & UI-Screen Popup) when we click
-	public GameObject profileButton, profilePopup, settingButton, settingPopup;
+	public GameObject profileButton, profilePopup, settingButton, settingPopup, popupDie;
     public void Setting()
     {
         settingPopup.SetActive(true);
@@ -50,6 +50,10 @@ public class Controller : MonoBehaviour, IController
     {
         profilePopup.SetActive(false);
 
+    }
+    public void ClosePopupDie()
+    {
+        popupDie.SetActive(false);
     }
 //Cho em xin in4 :333
     public void Facebook()
@@ -90,11 +94,13 @@ public class Controller : MonoBehaviour, IController
 //Nuoc mat em roi, tro choi ket thuc
     public void GameOver()
     {    
+        score = 0;
+		FindObjectOfType<View>().ShowScreen();
         Pause();
     }
 //Chu quan tinh tien!!!
     public Text scoreText;
-    public Text scoreClone;
+    private Text scoreClone;
     public int score { get; private set; }
 
     public void IncreaseScore()
